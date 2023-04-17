@@ -51,4 +51,38 @@ console.log(
     document.querySelector('#chc1').checked
 );
 }
-//
+//sprint05
+let div  = document.querySelectorAll('.div05');
+for (let i=0; i<div.length; i++) {
+    console.log(div[i]);
+    div[i].style.background= 'red';
+    div[i].onclick = two;
+}
+function two (){
+    console.log('work');
+}
+let b= document.getElementsByClassName('div05');
+for (let i=0; i<b.length; i++){
+    console.log(b[i]);
+    b[i].style.border = '3px solid black';
+}
+// radiobuttons select
+document.querySelector('.b5-0').onclick= () => {
+let rad = document.querySelectorAll('input[type="radio"]');
+//console.log(rad);
+for (let i=0; i<rad.length; i++){
+    if (rad[i].checked){
+        console.log(rad[i].value);
+        document.querySelector('#out5-0').innerHTML = rad[i].value;
+    }
+}
+}
+//task1
+let out51 = document.querySelector('#out5-1');
+let str='';
+document.querySelector('.b5-1').onclick = t1;
+function t1(){
+    for (let i=1; i<17; i++) str += i + '_';
+    console.log(str);
+    out51.innerHTML = str;
+}

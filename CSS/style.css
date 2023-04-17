@@ -15,3 +15,8 @@ h1, h2 {
 hr {
     margin: 5px 0;
 }
+div {
+    background-color: bisque;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
